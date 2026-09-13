@@ -1,0 +1,3 @@
+[mcp_servers.turabon]
+url = "https://turabon-api.leviathanmatrix.com/mcp"
+bearer_token_env_var = "TURABON_AGENT_API_KEY"

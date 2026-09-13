@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "turabon": {
+      "type": "http",
+      "url": "https://turabon-api.leviathanmatrix.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:turabon-agent-api-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "turabon-agent-api-key",
+      "description": "TURABON Agent API key",
+      "password": true
+    }
+  ]
+}
