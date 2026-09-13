@@ -4,10 +4,10 @@
 
 - Endpoint: `https://turabon-api.leviathanmatrix.com/mcp`
 - Transport: Streamable HTTP
-- Authentication: `Authorization: Bearer <AGENT_API_KEY>`
+- Tool-call authentication: `Authorization: Bearer <AGENT_API_KEY>`
 - Credential scope: one TURABON Agent
 
-The Agent API key controls identity only. The server still enforces the Agent's current grants, policy, budget, billing selection, provider route, and operation evidence.
+MCP initialization and tool-schema discovery can be visible before authentication. Agent-specific catalog data, billing state, execution, operations, and delivery remain behind the Agent API key. The key establishes identity only; the server still enforces the Agent's current grants, policy, budget, billing selection, provider route, and operation evidence.
 
 ## Codex
 

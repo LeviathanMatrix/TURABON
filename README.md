@@ -72,7 +72,7 @@ node examples/javascript/client.mjs catalog
 
 ## MCP tools
 
-The authenticated Agent sees only tools permitted by its current authority. The public profile currently exposes focused discovery, billing, execution, operation, and delivery tools, including:
+The public endpoint advertises its supported tool schemas so compatible clients can discover the server. Reading Agent-specific catalog or billing data and executing any tool requires a current Agent API key; every call is then limited by that Agent's authority. The profile currently includes:
 
 - `glassbox.catalog.search`
 - `glassbox.billing.get_options`
